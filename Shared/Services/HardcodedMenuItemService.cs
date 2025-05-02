@@ -26,5 +26,10 @@ namespace BOBOrderingApp.Shared.Services
         {
             return _items;
         }
+
+        public MenuItem GetMenuItemById(int id) 
+        {
+            return _items.FirstOrDefault(item => item.MenuItemId == id);
+        }
     }
 }
