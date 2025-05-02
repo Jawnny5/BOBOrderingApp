@@ -11,5 +11,6 @@ public static class StartupExtensions
     {
         services.AddAutoMapper(typeof(ApiMappingProfile));
         services.AddSingleton<IMenuItemService, HardcodedMenuItemService>();
+        services.AddSingleton<IWeeklyMenuService, MockWeeklyMenuService>();
     }
 }
